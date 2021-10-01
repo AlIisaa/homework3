@@ -1,0 +1,21 @@
+
+a = input("Введите число: ")
+
+s = list(a)
+
+x = float(s[0])
+y = float(s[-1])
+
+if x % 2 == 0 and y % 2 == 0:
+    buf = s[0]
+    s[0] = s[-1]
+    s[-1] = buf
+    str1 = ''.join(s)
+    print (str1)
+else:
+    print ('False')
+
+
+
+
+
